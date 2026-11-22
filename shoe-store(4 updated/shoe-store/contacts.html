@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacts">
+
+  <section class="section">
+    <h2>Contact Us</h2>
+    <p class="sub">We would love to hear from you</p>
+    <div class="cols">
+
+      <div class="info-list">
+        <div class="row"><span class="ico">📍</span><div><small>Address</small>123 Shoe Avenue, Your City, Philippines</div></div>
+        <div class="row"><span class="ico">📞</span><div><small>Phone</small>0993-991-9798</div></div>
+        <div class="row"><span class="ico">✉️</span><div><small>Email</small>solemateshoes@example.com</div></div>
+        <div class="row"><span class="ico">🕘</span><div><small>Store Hours</small>9:00 AM - 8:00 PM (Daily)</div></div>
+        <div class="row"><span class="ico">👤</span><div><small>Owner &amp; CEO</small>Vincent Victor Alvarado</div></div>
+      </div>
+
+      <form class="contact" id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Juan Dela Cruz">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="you@example.com">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        <div class="msg" id="formMsg"></div>
+      </form>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

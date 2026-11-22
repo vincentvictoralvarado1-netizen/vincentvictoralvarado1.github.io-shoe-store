@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="portfolio">
+
+  <section class="pf-hero fade">
+    <h2>My Portfolio</h2>
+    <p>Vincent Victor Alvarado &bull; BSIT Student</p>
+    <p class="pf-note">A collection of my exercises and activities in programming, web development and data handling.</p>
+    <div class="pf-count"><b id="pfTotal">0</b> projects &nbsp;|&nbsp; <b id="pfEx">0</b> exercises &nbsp;|&nbsp; <b id="pfAct">0</b> activities</div>
+  </section>
+
+  <section class="section">
+    <h2>Exercises &amp; Activities</h2>
+    <p class="sub">Click a filter to see what I have worked on</p>
+    <div class="filters" id="pfFilters">
+      <button class="on" data-type="All">All</button>
+      <button data-type="Exercise">Exercises</button>
+      <button data-type="Activity">Activities</button>
+    </div>
+    <div class="pf-grid" id="pfGrid"></div>
+  </section>
+
+  <section class="section">
+    <h2>Skills I Practiced</h2>
+    <p class="sub">Tools and languages used in these projects</p>
+    <div class="chips" id="pfSkills"></div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

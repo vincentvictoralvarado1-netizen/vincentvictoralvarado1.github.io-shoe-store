@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Popular Search Engines in the Philippines</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff4e0, #ffe0b3);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+  }
+  .box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(150, 80, 0, 0.15);
+    padding: 32px 40px;
+    max-width: 420px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+    color: #b35400;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #8a6a4a;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  ol {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 12px;
+  }
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #b35400;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 16px;
+    background: #fff7ec;
+    border-radius: 8px;
+    border-left: 4px solid #ff8c00;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  a:hover {
+    background: #ffe9cc;
+    transform: translateX(4px);
+  }
+  a span.share {
+    font-size: 13px;
+    font-weight: 400;
+    color: #a98860;
+  }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>Popular Search Engines</h1>
+  <div class="subtitle">Ranked by usage share in the Philippines</div>
+  <ol>
+    <li><a href="https://www.google.com/" target="_blank">1. Google <span class="share">~90%</span></a></li>
+    <li><a href="https://www.bing.com/" target="_blank">2. Bing <span class="share">~6%</span></a></li>
+    <li><a href="https://search.yahoo.com/" target="_blank">3. Yahoo! <span class="share">~3%</span></a></li>
+    <li><a href="https://duckduckgo.com/" target="_blank">4. DuckDuckGo <span class="share">&lt;1%</span></a></li>
+    <li><a href="https://www.ecosia.org/" target="_blank">5. Ecosia <span class="share">&lt;1%</span></a></li>
+  </ol>
+</div>
+</body>
+</html>

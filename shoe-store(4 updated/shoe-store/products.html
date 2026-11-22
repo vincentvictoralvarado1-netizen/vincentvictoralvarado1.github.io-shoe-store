@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+
+  <div class="cartbar">
+    <strong>👟 Our Shoe Collection</strong>
+    <span>🛒 Cart: <span class="pill" id="cartCount">0</span></span>
+  </div>
+
+  <section class="section">
+    <h2>Shop by Category</h2>
+    <p class="sub">Find the perfect pair for every activity</p>
+    <div class="filters">
+      <button class="on" data-cat="All">All</button>
+      <button data-cat="Running">Running</button>
+      <button data-cat="Basketball">Basketball</button>
+      <button data-cat="Lifestyle">Lifestyle</button>
+      <button data-cat="School">School</button>
+    </div>
+    <div class="grid" id="all"></div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/script.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Picture Gallery</title>
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: linear-gradient(135deg, #1f1235, #3a1f5d);
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .window {
+    background: #241636;
+    border: 1px solid #8c5cd6;
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .titlebar {
+    background: linear-gradient(#a15fe6, #6c2fb3);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    letter-spacing: 0.5px;
+  }
+  .content {
+    padding: 32px 24px 36px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 28px;
+    font-size: clamp(18px, 4vw, 24px);
+    letter-spacing: 1px;
+    color: #f1e9ff;
+  }
+  h1 .highlight {
+    color: #ffb84c;
+    font-style: italic;
+  }
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .grid a {
+    display: block;
+    line-height: 0;
+    border: 3px solid #ffb84c;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .grid a:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+  }
+  .grid img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">My Gallery</div>
+  <div class="content">
+    <h1>MY <span class="highlight">PICTURE</span> GALLERY</h1>
+    <div class="grid">
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://picsum.photos/seed/gallery1/260/200" alt="Photo 1">
+      </a>
+      <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://picsum.photos/seed/gallery2/260/200" alt="Photo 2">
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://picsum.photos/seed/gallery3/260/200" alt="Photo 3">
+      </a>
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://picsum.photos/seed/gallery4/260/200" alt="Photo 4">
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
